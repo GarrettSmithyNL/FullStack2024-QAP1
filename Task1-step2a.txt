@@ -1,0 +1,31 @@
+OS
+The os module for node allows the programmer to interact with the computers operating system. 
+The module gives access to functions that give information such as how much free memory there is, what the
+home directory of the computer is, and much more useful information. For example, a programmer is coding an 
+app that will run on both linux and windows.  The end of line (EOL) marker is different on each system. The 
+os module allows the programmer to call os.EOL which returns the proper EOL for the operating system. 
+
+Buffer
+The buffer module for node allows the programmer to store binary data, data that is stored as 1s and 0s,  
+faster and more effiecent then standard data types in JavaScript.  A buffer acts as an array with the 
+difference of not being able to resize the buffer on the fly. Buffers have all the nessacery methods
+for use. One use case for a buffer is when you are reading large amount of data from a binary stream.
+The stream can only store so much data but there is more data to come, the stream will create a buffer
+to store the data that is overflowing from the stream. 
+
+Stream
+The stream module for node allows the programmer to read and write data, and deal with end to end communications.
+There are 4 different types of stream in the node module, writable, readable, duplex (both read and write), and 
+transform (modifies the data as it is read or written). Streams are really good at dealing with large amount of data 
+being written or read. This is due to the fact that streams are memory effiecent and time effiecent. This is done by 
+instantly processing the data as it reads it, rather then waiting for entire data set to first be read and through 
+the use of buffers to store excess data that isnt ready to be processed. An example of streams in JavaScript is 
+the response and the request of a promise, the request is a readable stream, and the response is a writable stream.
+
+File System
+The file system module for node allows the programmer to create, read, write/append, and delete files.
+The file system allows for a program to systamaticly read and write files as the program needs. The file
+system uses streams to read and write files, so the process is quick and memory effiecent. An example of 
+the use of file system is making an error log. When you are writing a program and need a way to see all 
+the errors when the program is ran. File system can be used with streams to make a file that will store 
+all the error that were thrown.  
