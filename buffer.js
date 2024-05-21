@@ -1,5 +1,5 @@
 /*
- * Description: Examples of the buffer module for QAP 1 task 1 step 2b
+ * Description: Examples of the buffer module for QAP 1 task 1
  * By: Garrett Smith
  * Date: 05/21/2024
  */
@@ -21,17 +21,17 @@ buffer2.write("World");
 
 // Output the buffers as strings
 console.log("Buffer 1 as String: ");
-console.log(buffer1.toString());
+console.log(buffer1.toString()); // Output: Hello
 console.log("Buffer 2 as String: ");
-console.log(buffer2.toString());
+console.log(buffer2.toString()); // Output: World
 
 // Output the buffer as an array of bytes
 // This will output the ASCII values of the characters
 // the output will also show the empty bytes in the buffer
 console.log("Buffer 1 as Bytes: ");
-console.log(buffer1);
+console.log(buffer1); // Output: <Buffer 48 65 6c 6c 6f>
 console.log("Buffer 2 as Bytes: ");
-console.log(buffer2);
+console.log(buffer2); // Output: <Buffer 57 6f 72 6c 64 00 00 00 00 00>
 
 // Concatenate the two buffers
 console.log("Concatenating the two buffers into buffer 3");
@@ -39,12 +39,12 @@ let buffer3 = Buffer.concat([buffer1, buffer2]);
 
 // Output the concatenated buffer as a string
 console.log("Buffer 3 as String: ");
-console.log(buffer3.toString());
+console.log(buffer3.toString()); // Output: HelloWorld
 
 // Output the concatenated buffer as an array of bytes
 // This will also show the empty bytes in the buffer from the second buffer
 console.log("Buffer 3 as Bytes: ");
-console.log(buffer3);
+console.log(buffer3); // Output: <Buffer 48 65 6c 6c 6f 57 6f 72 6c 64 00 00 00 00 00>
 
 // Checks if the buffer is equal to another buffer
 console.log("Checking if buffer 1 is equal to buffer 2");
@@ -53,5 +53,4 @@ if (buffer1.equals(buffer2)) {
 } else {
   console.log("The buffers are not equal");
 }
-
-//
+// Output: The buffers are not equal

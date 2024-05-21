@@ -1,3 +1,9 @@
+/*
+ * Description: Examples of the file system module for QAP 1 task 1
+ * By: Garrett Smith
+ * Date: 05/21/2024
+ */
+
 const fs = require("fs");
 
 // Create a file
