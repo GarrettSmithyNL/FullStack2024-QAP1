@@ -1,0 +1,19 @@
+{
+  "name": "qap1",
+  "version": "1.0.0",
+  "description": "FullStack2024 - QAP1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GarrettSmithyNL/FullStack2024-QAP1.git"
+  },
+  "author": "Garrett Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GarrettSmithyNL/FullStack2024-QAP1/issues"
+  },
+  "homepage": "https://github.com/GarrettSmithyNL/FullStack2024-QAP1#readme"
+}
