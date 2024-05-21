@@ -13,15 +13,6 @@ for use. One use case for a buffer is when you are reading large amount of data 
 The stream can only store so much data but there is more data to come, the stream will create a buffer
 to store the data that is overflowing from the stream. 
 
-Stream
-The stream module for node allows the programmer to read and write data, and deal with end to end communications.
-There are 4 different types of stream in the node module, writable, readable, duplex (both read and write), and 
-transform (modifies the data as it is read or written). Streams are really good at dealing with large amount of data 
-being written or read. This is due to the fact that streams are memory effiecent and time effiecent. This is done by 
-instantly processing the data as it reads it, rather then waiting for entire data set to first be read and through 
-the use of buffers to store excess data that isnt ready to be processed. An example of streams in JavaScript is 
-the response and the request of a promise, the request is a readable stream, and the response is a writable stream.
-
 File System
 The file system module for node allows the programmer to create, read, write/append, and delete files.
 The file system allows for a program to systamaticly read and write files as the program needs. The file
